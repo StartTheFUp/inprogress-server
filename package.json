@@ -1,0 +1,23 @@
+{
+  "name": "inprogress-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src",
+    "test": "echo 'no test specified'",
+    "lint": "standard | snazzy",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/startthefup/inprogress-group/inprogress-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  }
+}

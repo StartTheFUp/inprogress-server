@@ -2,9 +2,9 @@ const db = require('monk')('localhost/inprogress')
 
 //la base de donnée est créée dans le terminal avec :
 //mongo
-//use testMonk
+//use inprogress
 
-//création des collections !
+//création des collections ! db.get('users').drop()
 const users = db.create('users')
 const projects = db.create('projects')
 const blocs = db.create('blocs')
@@ -71,3 +71,7 @@ const newBloc2 = {'idProjet':'projetId_65565','title':'Billet','type':'ToDo',
 
 blocs.insert(newBloc)
 blocs.insert(newBloc2)
+
+// pensez à créer des index si recherche fréquente ou ajouter quelques contraintes
+/*const users = db.get('users')
+users.createIndex('email')*/

@@ -25,7 +25,7 @@ const newProject = { 'name': 'project3Test', 'client': [{'name': 'Mich'}, {'name
 projects.insert(newProject)
 
 // insertion document blocs
-const newBloc = {'idProjet': 'projetId_65565',
+const newBloc = {'projectId': 'projetId_65565',
   'title': 'ToDo Client',
   'type': 'todo',
   'sections': [{'title': 'section1',
@@ -34,8 +34,8 @@ const newBloc = {'idProjet': 'projetId_65565',
       'properties': {'checked': false, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-23'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-24'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-24'),
       'threadId': 'commentID_7485248'
     },
     {
@@ -43,18 +43,18 @@ const newBloc = {'idProjet': 'projetId_65565',
       'properties': {'checked': true, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-26'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-27'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-27'),
       'threadId': 'commentID_7488948'
     }
     ]}],
   'createdBy': 'userId_1zezghozzge',
   'createdAt': new Date('2018-05-26'),
-  'updateBy': 'userId_1zezghozzge',
-  'updateAt': 'new Date("2018-05-27")'
+  'updatedBy': 'userId_1zezghozzge',
+  'updatedAt': 'new Date("2018-05-27")'
 }
 
-const newBloc2 = {'idProjet': 'projetId_65565',
+const newBloc2 = {'projectId': 'projetId_65565',
   'title': 'Billet',
   'type': 'billet',
   'sections': [{'title': '',
@@ -63,8 +63,8 @@ const newBloc2 = {'idProjet': 'projetId_65565',
       'properties': {'checked': false, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-23'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-24'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-24'),
       'threadId': 'commentID_7485248'
     },
     {
@@ -72,18 +72,18 @@ const newBloc2 = {'idProjet': 'projetId_65565',
       'properties': {'checked': true, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-26'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-27'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-27'),
       'threadId': 'commentID_7488948'
     }
     ]}],
   'createdBy': 'userId_1zezghozzge',
   'createdAt': new Date('2018-05-26'),
-  'updateBy': 'userId_1zezghozzge',
-  'updateAt': 'new Date("2018-05-27")'
+  'updatedBy': 'userId_1zezghozzge',
+  'updatedAt': 'new Date("2018-05-27")'
 }
 
-const newBloc3 = {'idProjet': 'projetId_65565',
+const newBloc3 = {'projectId': 'projetId_65565',
   'title': 'Ressources',
   'type': 'ressources',
   'sections': [{'title': '',
@@ -92,8 +92,8 @@ const newBloc3 = {'idProjet': 'projetId_65565',
       'properties': {'checked': false, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-23'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-24'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-24'),
       'threadId': 'commentID_74852489'
     },
     {
@@ -101,15 +101,15 @@ const newBloc3 = {'idProjet': 'projetId_65565',
       'properties': {'checked': true, 'archive': false},
       'createdBy': 'userId_1zezghozzge',
       'createdAt': new Date('2018-05-27'),
-      'updateBy': 'userId_1zezghozzge',
-      'updateAt': new Date('2018-05-27'),
+      'updatedBy': 'userId_1zezghozzge',
+      'updatedAt': new Date('2018-05-27'),
       'threadId': 'commentID_7488948'
     }
     ]}],
   'createdBy': 'userId_1zezghozzge',
   'createdAt': new Date('2018-05-26'),
-  'updateBy': 'userId_1zezghozzge',
-  'updateAt': 'new Date("2018-05-27")'
+  'updatedBy': 'userId_1zezghozzge',
+  'updatedAt': 'new Date("2018-05-27")'
 }
 
 blocs.insert(newBloc)

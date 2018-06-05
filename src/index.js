@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
   res.send('ok')
 })
 
-app.get('/blocs', (req, res, next) => {
-  db.readBlocs()
-    .then(blocs => res.json(blocs))
+app.get('/blocks', (req, res, next) => {
+  db.readBlocks()
+    .then(blocks => res.json(blocks))
     .catch(next)
 })
 

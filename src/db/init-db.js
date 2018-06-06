@@ -11,7 +11,8 @@ const initialProjects = [
 
 const initialBlocks = [
   require('../mocks/blocks/block-billets.json'),
-  require('../mocks/blocks/block-todos.json'),
+  require('../mocks/blocks/block-todosWikaJob.json'),
+  require('../mocks/blocks/block-todosSTFU.json'),
   require('../mocks/blocks/block-ressources.json')
 ]
 
@@ -19,6 +20,7 @@ const initialBlocks = [
 db.get('users').drop()
 db.get('projects').drop()
 db.get('blocks').drop()
+db.get('blocs').drop()
 
 // Re-create collections
 const users = db.create('users')

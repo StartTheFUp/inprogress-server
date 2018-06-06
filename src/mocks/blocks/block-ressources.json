@@ -7,10 +7,19 @@
       "title": "",
       "elements": [
         {
-          "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Acces Wikajob",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
+          "updatedBy": "userId_1zezghozzge",
+          "updatedAt": "2018-05-24T00:00:00.000Z",
+          "threadId": "commentID_7485248"
+        },
+        {
+          "content": "Comment changer l'image de partage sur strikingly ?",
+          "properties": { "checked": false, "archive": false },
+          "createdBy": "userId_1zezghozzge",
+          "createdAt": "2018-05-24T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",
           "updatedAt": "2018-05-24T00:00:00.000Z",
           "threadId": "commentID_7485248"
@@ -24,6 +33,7 @@
           "updatedAt": "2018-05-27T00:00:00.000Z",
           "threadId": "commentID_7488948"
         }
+
       ]
     }
   ],

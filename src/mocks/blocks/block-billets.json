@@ -7,6 +7,7 @@
       "title": "",
       "elements": [
         {
+          "type": "billets",
           "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
@@ -16,6 +17,7 @@
           "threadId": "commentID_7485248"
         },
         {
+          "type": "billets",
           "content": "Finir le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": true, "archive": false },
           "createdBy": "userId_1zezghozzge",
@@ -25,6 +27,7 @@
           "threadId": "commentID_7488948"
         },
         {
+          "type": "billets",
           "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
@@ -34,6 +37,7 @@
           "threadId": "commentID_7485249"
         },
         {
+          "type": "billets",
           "content": "Finir le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": true, "archive": false },
           "createdBy": "userId_1zezghozzge",

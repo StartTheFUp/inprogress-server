@@ -20,7 +20,7 @@ const initialBlocks = [
 db.get('users').drop()
 db.get('projects').drop()
 db.get('blocks').drop()
-db.get('blocs').drop()
+
 
 // Re-create collections
 const users = db.create('users')

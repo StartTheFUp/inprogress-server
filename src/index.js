@@ -28,6 +28,12 @@ app.get('/blocks', (req, res, next) => {
     .catch(next)
 })
 
+app.get('/comments', (req, res, next) => {
+  db.readComments()
+    .then(comments => res.json(comments))
+    .catch(next)
+})
+
 // Errors handling
 app.use((err, req, res, next) => {
   if (err) {

@@ -16,6 +16,10 @@ const initialBlocks = [
   require('../mocks/blocks/block-ressources.json')
 ]
 
+const initialComments = [
+  require('../mocks/comments/comments.json')
+]
+
 // Drop collections
 db.get('users').drop()
 db.get('projects').drop()
@@ -41,6 +45,10 @@ for (const project of initialProjects) {
 for (const block of initialBlocks) {
   blocks.insert(block)
 }
+
+// for (const comment of initialComments) {
+//   comments.insert(comment)
+// }
 
 // pensez à créer des index si recherche fréquente ou ajouter quelques contraintes
 /* const users = db.get('users')

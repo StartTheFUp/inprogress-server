@@ -8,7 +8,10 @@ const blocks = db.get('blocks')
 
 const readBlocks = () => blocks.find({})
 
+const readComments = () => comments.find({})
+
 module.exports = {
   ...db,
-  readBlocks
+  readBlocks,
+  readComments
 }

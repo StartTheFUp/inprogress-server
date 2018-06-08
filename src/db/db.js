@@ -5,6 +5,7 @@ const url = process.env.DATABASE_URL || 'mongodb://localhost:27017/inprogress'
 const db = connect(url)
 
 const blocks = db.get('blocks')
+const comments = db.get('comments')
 
 const readBlocks = () => blocks.find({})
 

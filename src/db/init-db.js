@@ -24,12 +24,13 @@ const initialComments = [
 db.get('users').drop()
 db.get('projects').drop()
 db.get('blocks').drop()
-
+db.get('comments').drop()
 
 // Re-create collections
 const users = db.create('users')
 const projects = db.create('projects')
 const blocks = db.create('blocks')
+const comments = db.create('comments')
 
 // Insert users
 for (const user of initialUsers) {
@@ -46,9 +47,9 @@ for (const block of initialBlocks) {
   blocks.insert(block)
 }
 
-// for (const comment of initialComments) {
-//   comments.insert(comment)
-// }
+for (const comment of initialComments) {
+  comments.insert(comment)
+}
 
 // pensez à créer des index si recherche fréquente ou ajouter quelques contraintes
 /* const users = db.get('users')

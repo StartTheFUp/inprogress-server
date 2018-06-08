@@ -8,7 +8,6 @@ const blocks = db.get('blocks')
 const comments = db.get('comments')
 
 const readBlocks = () => blocks.find({})
-
 const readComments = () => comments.find({})
 
 module.exports = {

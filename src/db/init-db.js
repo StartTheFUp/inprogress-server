@@ -6,7 +6,8 @@ const initialUsers = [
 ]
 
 const initialProjects = [
-  require('../mocks/projects/project1.json')
+  require('../mocks/projects/project1.json'),
+  require('../mocks/projects/project2.json')
 ]
 
 const initialBlocks = [
@@ -17,7 +18,8 @@ const initialBlocks = [
 ]
 
 const initialComments = [
-  require('../mocks/comments/comments.json')
+  require('../mocks/comments/comment1.json'),
+  require('../mocks/comments/comment2.json')
 ]
 
 // Drop collections

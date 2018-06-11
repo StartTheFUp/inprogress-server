@@ -4,9 +4,11 @@
   "type": "ressources",
   "sections": [
     {
+      "id":"sectionress2",
       "title": "",
       "elements": [
         {
+          "id":"elt5",
           "type": "ressources",
           "content": "Acces Wikajob",
           "properties": { "checked": false, "archive": false },
@@ -17,6 +19,7 @@
           "threadId": "commentID_7485248"
         },
         {
+          "id":"elt6",
           "type": "ressources",
           "content": "Comment changer l'image de partage sur strikingly ?",
           "properties": { "checked": false, "archive": false },
@@ -27,6 +30,7 @@
           "threadId": "commentID_7485248"
         },
         {
+          "id":"elt7",
           "type": "ressources",
           "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": true, "archive": false },

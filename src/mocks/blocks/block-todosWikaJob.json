@@ -4,9 +4,11 @@
   "type": "todos",
   "sections": [
     {
+      "id":"sectionTodo5",
       "title": "Flow-Prospect > Guide",
       "elements": [
         {
+          "id":"elt12",
           "type": "todos",
           "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": false, "archive": false },
@@ -17,6 +19,7 @@
           "threadId": "commentID_7485248"
         },
         {
+          "id":"elt13",
           "type": "todos",
           "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": true, "archive": false },
@@ -29,9 +32,11 @@
       ]
     },
     {
+      "id":"sectionTodo6",
       "title": "Flow Match",
       "elements": [
         {
+          "id":"elt14",
           "type": "todos",
           "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": false, "archive": false },
@@ -42,6 +47,7 @@
           "threadId": "commentID_7486248"
         },
         {
+          "id":"elt15",
           "type": "todos",
           "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": true, "archive": false },

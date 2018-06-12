@@ -34,6 +34,13 @@ app.get('/comments', (req, res, next) => {
     .catch(next)
 })
 
+app.get('/project/:id', (req, res, next) => {
+  const idProject = req.params.id
+  db.readProject(idProject)
+    .then(project => res.json(project))
+    .catch(next)
+})
+
 // Errors handling
 app.use((err, req, res, next) => {
   if (err) {

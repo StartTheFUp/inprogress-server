@@ -10,8 +10,8 @@ const projects = db.get('projects')
 
 const readBlocks = () => blocks.find({})
 const readComments = () => comments.find({})
-//on met une ID par défaut pour l'instant
-const readProject = (id = "1") => projects.findOne({id})
+// on met une ID par défaut pour l'instant
+const readProject = (id = '1') => projects.findOne({id})
 
 module.exports = {
   ...db,

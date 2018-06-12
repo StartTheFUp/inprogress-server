@@ -1,6 +1,6 @@
 {
   "projectId": "projetId_65565",
-  "title": "Billets",
+  "title": "Billets en cours",
   "type": "billets",
   "sections": [
     {
@@ -11,7 +11,7 @@
           "id":"elt1",
           "type": "billets",
           "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
-          "properties": { "checked": false, "archive": false },
+          "properties": { "checked": false, "archive": true},
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",
@@ -21,8 +21,8 @@
         {
           "id":"elt2",
           "type": "billets",
-          "content": "Finir le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
-          "properties": { "checked": true, "archive": false },
+          "content": "Finir-elt2- le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",
@@ -32,7 +32,7 @@
         {
           "id":"elt3",
           "type": "billets",
-          "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
+          "content": "Dans mail 1-elt3-, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-27T00:00:00.000Z",
@@ -43,8 +43,8 @@
         {
           "id":"elt4",
           "type": "billets",
-          "content": "Finir le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
-          "properties": { "checked": true, "archive": false },
+          "content": "Finir le petit guide RH2-elt4, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-28T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",

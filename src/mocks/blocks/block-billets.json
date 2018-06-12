@@ -1,28 +1,55 @@
 {
   "projectId": "projetId_65565",
-  "title": "Billets",
+  "title": "Billets en cours",
   "type": "billets",
   "sections": [
     {
+      "id":"sectionBillet1",
       "title": "",
       "elements": [
         {
-          "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
-          "properties": { "checked": false, "archive": false },
+          "id":"elt1",
+          "type": "billets",
+          "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
+          "properties": { "checked": false, "archive": true},
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",
           "updatedAt": "2018-05-24T00:00:00.000Z",
-          "threadId": "commentID_7485248"
+          "threadId": "commentID_billet1_elt1"
         },
         {
-          "content": "Finir le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
-          "properties": { "checked": true, "archive": false },
+          "id":"elt2",
+          "type": "billets",
+          "content": "Finir-elt2- le petit guide RH2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",
           "updatedBy": "userId_1zezghozzge",
           "updatedAt": "2018-05-27T00:00:00.000Z",
           "threadId": "commentID_7488948"
+        },
+        {
+          "id":"elt3",
+          "type": "billets",
+          "content": "Dans mail 1-elt3-, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
+          "properties": { "checked": false, "archive": false },
+          "createdBy": "userId_1zezghozzge",
+          "createdAt": "2018-05-27T00:00:00.000Z",
+          "updatedBy": "userId_1zezghozzge",
+          "updatedAt": "2018-05-28T00:00:00.000Z",
+          "threadId": "commentID_7485249"
+        },
+        {
+          "id":"elt4",
+          "type": "billets",
+          "content": "Finir le petit guide RH2-elt4, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "properties": { "checked": false, "archive": false },
+          "createdBy": "userId_1zezghozzge",
+          "createdAt": "2018-05-28T00:00:00.000Z",
+          "updatedBy": "userId_1zezghozzge",
+          "updatedAt": "2018-05-29T00:00:00.000Z",
+          "threadId": "commentID_7488950"
         }
       ]
     }

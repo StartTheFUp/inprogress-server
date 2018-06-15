@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 
 const db = require('./db/db.js')
 
@@ -15,6 +16,12 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Credentials', 'true')
   next()
 })
+
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
+
+app.use(bodyParser.json());
 
 // ROUTES
 
@@ -39,6 +46,11 @@ app.get('/project/:id', (req, res, next) => {
   db.readProject(idProject)
     .then(project => res.json(project))
     .catch(next)
+})
+
+app.post('/blocks', (req, res, next) => {
+  let block = req.body
+  db.saveBlock(block);
 })
 
 // Errors handling

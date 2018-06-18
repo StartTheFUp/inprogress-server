@@ -1,0 +1,54 @@
+[
+  {
+    "id":"commentID_todoSTFU3_elt8",
+    "comments": [
+      {
+        "id":"comment1",
+        "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part. Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com?",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-27T00:00:00.000Z",
+        "proprieties": ""
+      },
+      {
+        "id":"comment2",
+        "content": "A vérifier mais normalement oui c'est dans le champ 'Reply-To'",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-23T00:00:00.000Z",
+        "proprieties": ""
+      },
+      {
+        "id":"comment3",
+        "content": "Si besoin de plus d'infos, voir ce lien:",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-26T00:00:00.000Z",
+        "proprieties": ""
+      }
+    ]
+  },
+  {
+    "id":"commentID_billet1_elt1",
+    "comments": [
+      {
+        "id":"comment4",
+        "content": "2-Dans mail 1, on indique que si questions, les gens peuvent nous en faire part. Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com?",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-27T00:00:00.000Z",
+        "proprieties": ""
+      },
+      {
+        "id":"comment5",
+        "content": "2-A vérifier mais normalement oui c'est dans le champ 'Reply-To'",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-23T00:00:00.000Z",
+        "proprieties": ""
+      },
+      {
+        "id":"comment6",
+        "content": "2-Si besoin de plus d'infos, voir ce lien:",
+        "createdBy": "userId_1zezghozzge",
+        "createdAt": "2018-05-26T00:00:00.000Z",
+        "proprieties": ""
+      }
+    ]
+  }
+]

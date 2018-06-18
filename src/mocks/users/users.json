@@ -1,0 +1,14 @@
+[
+  {
+    "name": "mikael",
+    "email": "mikael@gmail.com",
+    "password": "$4554f6sfs6f4s6sg4",
+    "type": "admin"
+  },
+  {
+    "name": "gaelle",
+    "email": "gaelle@gmail.com",
+    "password": "$4554f6sfs6f4s6sg4",
+    "type": "client"
+  }
+]

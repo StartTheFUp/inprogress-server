@@ -13,9 +13,10 @@ const readComments = () => comments.find({})
 // on met une ID par défaut pour l'instant
 const readProject = (id = '1') => projects.findOne({ id })
 
-const saveBlock = (block) => {
+const saveBlock = (block, blockId) => {
+  console.log(block)
   blocks.update({
-    _id: "5b23632a2018136f98e686d3"
+    _id: blockId
   },
     block
   )

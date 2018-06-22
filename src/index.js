@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 })
 
 app.use(bodyParser.urlencoded({
-  extended: false
+  extended: true
 }));
 
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.get('/comments', (req, res, next) => {
     .catch(next)
 })
 
-app.get('/project/:id', (req, res, next) => {
+app.get('/projects/:id', (req, res, next) => {
   const idProject = req.params.id
   db.readProject(idProject)
     .then(project => res.json(project))
@@ -49,8 +49,11 @@ app.get('/project/:id', (req, res, next) => {
 })
 
 app.post('/blocks', (req, res, next) => {
+  console.log(req.body)
+  let blockId = req.body._id
   let block = req.body
-  db.saveBlock(block);
+  console.log(blockId)
+  db.saveBlock(block, blockId)
 })
 
 // Errors handling

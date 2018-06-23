@@ -34,7 +34,7 @@ app.get('/comments', (req, res, next) => {
     .catch(next)
 })
 
-app.get('/project/:id', (req, res, next) => {
+app.get('/projects/:id', (req, res, next) => {
   const idProject = req.params.id
   db.readProject(idProject)
     .then(project => res.json(project))

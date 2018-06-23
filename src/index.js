@@ -46,6 +46,14 @@ app.get('/projects/:id', (req, res, next) => {
 
 app.put('/blocks', (req, res, next) => {
   console.log("UPDATEBlock : ", req.body)
+  req.body.forEach( block => {
+    db.updateBlocks(block)
+    .then(res.send('ok'))
+    .catch(next)
+  }
+
+  )
+
 })
 
 // Errors handling

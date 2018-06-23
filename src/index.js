@@ -1,5 +1,5 @@
 const express = require('express')
-
+const bodyParser = require('body-parser')
 const db = require('./db/db.js')
 
 const port = process.env.PORT || 5000
@@ -15,6 +15,9 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Credentials', 'true')
   next()
 })
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false}))
 
 // ROUTES
 
@@ -39,6 +42,10 @@ app.get('/projects/:id', (req, res, next) => {
   db.readProject(idProject)
     .then(project => res.json(project))
     .catch(next)
+})
+
+app.put('/blocks', (req, res, next) => {
+  console.log("UPDATEBlock : ", req.body)
 })
 
 // Errors handling

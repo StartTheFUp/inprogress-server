@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-
 const db = require('./db/db.js')
 
 const port = process.env.PORT || 5000
@@ -19,9 +18,9 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.urlencoded({
   extended: true
-}));
+}))
 
-app.use(bodyParser.json());
+app.use(bodyParser.json())
 
 // ROUTES
 
@@ -46,6 +45,17 @@ app.get('/projects/:id', (req, res, next) => {
   db.readProject(idProject)
     .then(project => res.json(project))
     .catch(next)
+})
+
+// probleme colision : si 2 user envoit un updatesection sur meme block sans rechergement préalable
+// (seul le deuxieme est sauvegardé)
+app.put('/blocks', (req, res, next) => {
+  console.log('UPDATEBlock : ', req.headers, req.body)
+  req.body.forEach(block => {
+    db.updateBlocks(block)
+      .then(res.send('ok'))
+      .catch(next)
+  })
 })
 
 app.post('/blocks', (req, res, next) => {

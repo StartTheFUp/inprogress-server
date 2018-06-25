@@ -11,13 +11,27 @@ const projects = db.get('projects')
 const readBlocks = () => blocks.find({})
 const readComments = () => comments.find({})
 // on met une ID par défaut pour l'instant
+
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlocks = (block) => blocks.update({_id: block._id}, block)
+
+
+const saveBlock = (block, blockId) => {
+  console.log(block)
+  blocks.update({
+    _id: blockId
+  },
+    block
+  )
+}
+
 
 module.exports = {
   ...db,
   readBlocks,
   readComments,
   readProject,
-  updateBlocks
+  updateBlocks,
+  saveBlock,
+  blocks
 }

@@ -16,8 +16,11 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.use(bodyParser.json());
 
 // ROUTES
 
@@ -50,11 +53,17 @@ app.put('/blocks', (req, res, next) => {
   console.log('UPDATEBlock : ', req.headers, req.body)
   req.body.forEach(block => {
     db.updateBlocks(block)
-      .then(res.send('okkkkkkkkkk'))
+      .then(res.send('ok'))
       .catch(next)
-  }
+  })
+})
 
-  )
+app.post('/blocks', (req, res, next) => {
+  console.log(req.body)
+  let blockId = req.body._id
+  let block = req.body
+  console.log(blockId)
+  db.saveBlock(block, blockId)
 })
 
 // Errors handling

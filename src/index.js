@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 // ROUTES
 
@@ -44,16 +44,17 @@ app.get('/projects/:id', (req, res, next) => {
     .catch(next)
 })
 
+// probleme colision : si 2 user envoit un updatesection sur meme block sans rechergement préalable
+// (seul le deuxieme est sauvegardé)
 app.put('/blocks', (req, res, next) => {
-  console.log("UPDATEBlock : ", req.body)
-  req.body.forEach( block => {
+  console.log('UPDATEBlock : ', req.headers, req.body)
+  req.body.forEach(block => {
     db.updateBlocks(block)
-    .then(res.send('ok'))
-    .catch(next)
+      .then(res.send('okkkkkkkkkk'))
+      .catch(next)
   }
 
   )
-
 })
 
 // Errors handling

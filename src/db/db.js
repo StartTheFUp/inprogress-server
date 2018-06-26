@@ -4,6 +4,7 @@ const url = process.env.DATABASE_URL || 'mongodb://localhost:27017/inprogress'
 
 const db = connect(url)
 
+const users = db.get('users')
 const blocks = db.get('blocks')
 const comments = db.get('comments')
 const projects = db.get('projects')
@@ -24,6 +25,11 @@ const saveBlock = (block, blockId) => {
   )
 }
 
+const findUser = (user) => {
+  console.log('db', user)
+  return users.find({email: user.email, password: user.password})
+}
+
 module.exports = {
   ...db,
   readBlocks,
@@ -31,5 +37,8 @@ module.exports = {
   readProject,
   updateBlocks,
   saveBlock,
+  findUser,
   blocks
 }
+
+/*, password: user.password */

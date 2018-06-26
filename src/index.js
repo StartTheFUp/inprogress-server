@@ -66,6 +66,12 @@ app.post('/blocks', (req, res, next) => {
   db.saveBlock(block, blockId)
 })
 
+app.post('/signin', (req, res, next) => {
+  db.findUser(req.body)
+    .then(user => res.end(JSON.stringify(user)))
+    .catch(err => console.log('err', err))
+})
+
 // Errors handling
 app.use((err, req, res, next) => {
   if (err) {

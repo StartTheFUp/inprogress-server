@@ -9,9 +9,12 @@ const blocks = db.get('blocks')
 const comments = db.get('comments')
 const projects = db.get('projects')
 
+const findProjectAdmin = () => projects.find({})
+
+const findProjectClient = (email) => projects.find({client: email})
+
 const readBlocks = () => blocks.find({})
 const readComments = () => comments.find({})
-// on met une ID par défaut pour l'instant
 
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlocks = (block) => blocks.update({_id: block._id}, block)
@@ -27,7 +30,7 @@ const saveBlock = (block, blockId) => {
 
 const findUser = (user) => {
   console.log('db', user)
-  return users.find({email: user.email, password: user.password})
+  return users.findOne({email: user.email, password: user.password})
 }
 
 module.exports = {
@@ -38,6 +41,8 @@ module.exports = {
   updateBlocks,
   saveBlock,
   findUser,
+  findProjectAdmin,
+  findProjectClient,
   blocks
 }
 

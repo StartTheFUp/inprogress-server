@@ -49,21 +49,12 @@ app.get('/projects/:id', (req, res, next) => {
 
 // probleme colision : si 2 user envoit un updatesection sur meme block sans rechergement préalable
 // (seul le deuxieme est sauvegardé)
-app.put('/blocks', (req, res, next) => {
-  console.log('UPDATEBlock : ', req.headers, req.body)
-  req.body.forEach(block => {
-    db.updateBlocks(block)
-      .then(res.send('ok'))
-      .catch(next)
-  })
-})
-
 app.post('/blocks', (req, res, next) => {
-  console.log(req.body)
-  let blockId = req.body._id
-  let block = req.body
-  console.log(blockId)
-  db.saveBlock(block, blockId)
+  req.body.map(element => {
+    db.updateBlocks(element)
+  })
+    .then(res.send('ok'))
+    .catch(next)
 })
 
 // Errors handling

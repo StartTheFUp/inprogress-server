@@ -15,21 +15,11 @@ const readComments = () => comments.find({})
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlocks = (block) => blocks.update({_id: block._id}, block)
 
-const saveBlock = (block, blockId) => {
-  console.log(block)
-  blocks.update({
-    _id: blockId
-  },
-  block
-  )
-}
-
 module.exports = {
   ...db,
   readBlocks,
   readComments,
   readProject,
   updateBlocks,
-  saveBlock,
   blocks
 }

@@ -1,0 +1,11 @@
+{
+  "name": "wikajob2",
+  "id": "2",
+  "client": [
+    { "name": "Michmich" },
+    { "name": "Mikael", "password": "$h25jl" }
+  ],
+  "createdAt": "2018-05-24",
+  "websiteURL": "www.google.fr",
+  "pictureURL":"http://placekitten.com/g/400/300"
+}

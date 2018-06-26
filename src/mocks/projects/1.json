@@ -1,0 +1,11 @@
+{
+  "name": "wikajob",
+  "id": "1",
+  "client": [
+    { "name": "Mich" },
+    { "name": "M", "password": "$h25" }
+  ],
+  "createdAt": "2018-05-24",
+  "websiteURL": "www.wikajob.fr",
+  "pictureURL":"http://placekitten.com/200/300"
+}

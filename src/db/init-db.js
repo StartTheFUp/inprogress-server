@@ -1,13 +1,13 @@
 const db = require('monk')('localhost/inprogress')
 
 const initialUsers = [
-  require('../mocks/users/user1.json'),
-  require('../mocks/users/user2.json')
+  require('../mocks/users/1.json'),
+  require('../mocks/users/2.json')
 ]
 
 const initialProjects = [
-  require('../mocks/projects/project1.json'),
-  require('../mocks/projects/project2.json')
+  require('../mocks/projects/1.json'),
+  require('../mocks/projects/2.json')
 ]
 
 const initialBlocks = [
@@ -18,8 +18,8 @@ const initialBlocks = [
 ]
 
 const initialComments = [
-  require('../mocks/comments/comment1.json'),
-  require('../mocks/comments/comment2.json')
+  require('../mocks/comments/1.json'),
+  require('../mocks/comments/2.json')
 ]
 
 // Drop collections

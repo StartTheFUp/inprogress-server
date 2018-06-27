@@ -16,7 +16,7 @@ const findProjectClient = (email) => projects.find({client: email})
 const readBlocks = () => blocks.find({})
 const readComments = () => comments.find({})
 
-const readProject = (id = '1') => projects.findOne({id})
+const readProject = (id) => projects.findOne({id})
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
 
 const findUser = (user) => {
@@ -29,8 +29,6 @@ module.exports = {
   readBlocks,
   readComments,
   readProject,
-  updateBlocks,
-  saveBlock,
   findUser,
   findProjectAdmin,
   findProjectClient,

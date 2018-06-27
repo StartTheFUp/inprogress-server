@@ -1,9 +1,10 @@
 {
   "name": "wikajob",
-  "id": "1",
+  "id": "projetId_65565",
   "client": [
-    "mikael@gmail.com",
-    "gaelle@gmail.com"
+    {"name":"mikael", "id":"1"},
+    {"name":"micheline"},
+    {"name":"michel"}
   ],
   "createdAt": "2018-05-24",
   "websiteURL": "www.wikajob.fr",

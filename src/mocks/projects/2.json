@@ -2,7 +2,7 @@
   "name": "wikajob2",
   "id": "2",
   "client": [
-    "mikael@gmail.com"
+    {"name":"micheline"}
   ],
   "createdAt": "2018-05-24",
   "websiteURL": "www.google.fr",

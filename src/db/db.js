@@ -13,13 +13,13 @@ const readComments = () => comments.find({})
 // on met une ID par défaut pour l'instant
 
 const readProject = (id = '1') => projects.findOne({id})
-const updateBlocks = (block) => blocks.update({_id: block._id}, block)
+const updateBlock = (block) => blocks.update({_id: block._id}, block)
 
 module.exports = {
   ...db,
   readBlocks,
   readComments,
   readProject,
-  updateBlocks,
+  updateBlock,
   blocks
 }

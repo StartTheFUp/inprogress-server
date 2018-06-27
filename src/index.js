@@ -50,10 +50,10 @@ app.get('/projects/:id', (req, res, next) => {
 // probleme colision : si 2 user envoit un updatesection sur meme block sans rechergement préalable
 // (seul le deuxieme est sauvegardé)
 app.post('/blocks', (req, res, next) => {
-  req.body.map(element => {
-    db.updateBlocks(element)
-  })
-    .then(res.send('ok'))
+  Promise.all(req.body.map(block => {
+    db.updateBlock(block)
+  }))
+    .then(() => res.send('ok'))
     .catch(next)
 })
 

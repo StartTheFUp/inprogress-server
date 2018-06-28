@@ -14,12 +14,13 @@ const readComments = () => comments.find({})
 
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
-
+const updateThreadComment = (threadComment) => comments.update({_id: threadComment._id}, threadComment)
 module.exports = {
   ...db,
   readBlocks,
   readComments,
   readProject,
   updateBlock,
-  blocks
+  blocks,
+  updateThreadComment
 }

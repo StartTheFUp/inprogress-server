@@ -57,6 +57,14 @@ app.post('/blocks', (req, res, next) => {
     .catch(next)
 })
 
+app.post('/comments', (req, res, next) => {
+  Promise.all(req.body.map(threadComment => {
+    db.updateThreadComment(threadComment)
+  }))
+    .then(() => res.send('ok'))
+    .catch(next)
+})
+
 // Errors handling
 app.use((err, req, res, next) => {
   if (err) {

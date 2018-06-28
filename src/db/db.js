@@ -14,7 +14,7 @@ const readComments = () => comments.find({})
 
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
-const updateThreadComment = (threadComment) => comments.update({_id: threadComment._id}, threadComment)
+const updateThreadComment = (threadComment) => comments.update({id: threadComment.id}, threadComment, {upsert:true})
 module.exports = {
   ...db,
   readBlocks,

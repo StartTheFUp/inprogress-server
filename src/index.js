@@ -60,23 +60,20 @@ app.post('/blocks', (req, res, next) => {
 app.post('/signin', (req, res, next) => {
   db.findUser(req.body)
     .then(user => {
-      console.log('user',user)
+      console.log('user', user)
       if (user === null) {
         return res.end('user not defined')
-       }
-      else if (user.type === 'admin') {
+      } else if (user.type === 'admin') {
         console.log('admin identifié')
         db.findProjectAdmin()
           .then(projects => res.end(JSON.stringify(projects)))
           .catch(next)
-      }
-      else if (user.type === 'client') {
+      } else if (user.type === 'client') {
         console.log('clients identifié')
         db.findProjectClient(user.email)
           .then(project => res.end(JSON.stringify(project)))
           .catch(next)
-      }
-      else return res.end('no project found')
+      } else return res.end('no project found')
     })
     .catch(err => console.log('err', err))
 })

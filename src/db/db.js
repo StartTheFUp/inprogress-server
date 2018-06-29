@@ -1,8 +1,8 @@
-const connect = require('monk')
+const monk = require('monk')
 
 const url = process.env.DATABASE_URL || 'mongodb://localhost:27017/inprogress'
 
-const db = connect(url)
+const db = monk(url)
 
 const blocks = db.get('blocks')
 const comments = db.get('comments')
@@ -14,7 +14,14 @@ const readComments = () => comments.find({})
 
 const readProject = (id = '1') => projects.findOne({id})
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
-const updateThreadComment = (threadComment) => comments.update({_id: threadComment._id}, threadComment, {upsert: true})
+const updateThreadComment = (threadComment) => {
+  const update = {
+    ...threadComment,
+    _id: threadComment._id || monk.id()
+  }
+
+  return comments.update({ id: update.id }, update, { upsert: true })
+}
 module.exports = {
   ...db,
   readBlocks,

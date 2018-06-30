@@ -10,6 +10,7 @@ const comments = db.get('comments')
 const projects = db.get('projects')
 
 const findProjectAdmin = () => projects.find({})
+const saveUser = (user) => users.insert(user)
 
 const findProjectClient = (email) => projects.find({client: email})
 
@@ -26,9 +27,8 @@ const updateThreadComment = (threadComment) => {
 
   return comments.update({ id: update.id }, update, { upsert: true })
 }
-const findUser = (user) => {
-  console.log('db', user)
-  return users.findOne({email: user.email, password: user.password})
+const findUser = (email) => {
+  return users.findOne({email})
 }
 
 module.exports = {
@@ -41,7 +41,8 @@ module.exports = {
   findProjectClient,
   updateBlock,
   blocks,
-  updateThreadComment
+  updateThreadComment,
+  saveUser
 }
 
 /*, password: user.password */

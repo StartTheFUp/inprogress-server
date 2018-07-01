@@ -16,6 +16,7 @@ const findProjectClient = (email) => projects.find({client: email})
 const findProjectAdmin = () => projects.find({})
 
 const readProject = (id) => projects.findOne({id})
+const readBlocksById = (id) => blocks.find({projectId: id})
 const readBlocks = () => blocks.find({})
 const readComments = () => comments.find({})
 
@@ -31,6 +32,7 @@ const updateThreadComment = (threadComment) => {
 module.exports = {
   ...db,
   readBlocks,
+  readBlocksById,
   readComments,
   readProject,
   findUser,

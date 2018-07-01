@@ -36,6 +36,13 @@ app.get('/blocks', (req, res, next) => {
     .catch(next)
 })
 
+app.get('/blocks/:id', (req, res, next) => {
+  const projectId = req.params.id
+  db.readBlocksById(projectId)
+    .then(blocks => res.json(blocks))
+    .catch(next)
+})
+
 app.get('/comments', (req, res, next) => {
   db.readComments()
     .then(comments => res.json(comments))

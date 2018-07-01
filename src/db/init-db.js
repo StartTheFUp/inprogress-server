@@ -2,7 +2,8 @@ const db = require('monk')('localhost/inprogress')
 
 const initialUsers = [
   require('../mocks/users/1.json'),
-  require('../mocks/users/2.json')
+  require('../mocks/users/2.json'),
+  require('../mocks/users/3.json')
 ]
 
 const initialProjects = [
@@ -14,7 +15,8 @@ const initialBlocks = [
   require('../mocks/blocks/block-billets.json'),
   require('../mocks/blocks/block-todosWikaJob.json'),
   require('../mocks/blocks/block-todosSTFU.json'),
-  require('../mocks/blocks/block-ressources.json')
+  require('../mocks/blocks/block-ressources.json'),
+  require('../mocks/blocks/block-billets.wika2.json')
 ]
 
 const initialComments = [
@@ -35,11 +37,11 @@ const initialComments = [
   require('../mocks/comments/15.json')
 ]
 
-// Drop collections
-db.get('users').drop()
-db.get('projects').drop()
-db.get('blocks').drop()
-db.get('comments').drop()
+// Drop collections dans le terminal :  db.dropDatabase();
+/* db.get('users').drop()
+  db.get('projects').drop()
+  db.get('blocks').drop()
+  db.get('comments').drop() */
 
 // Re-create collections
 const users = db.create('users')

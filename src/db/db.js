@@ -22,19 +22,19 @@ const readComments = () => comments.find({})
 
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
 const updateThreadComment = (threadComment) => {
-if(comments.find({id : threadComment.id})){
-  let update = {
-    ...threadComment
+  if (comments.find({id: threadComment.id})) {
+    let update = {
+      ...threadComment
 
+    }
+    return comments.update({ id: update.id }, update, { upsert: true })
+  } else {
+    let update = {
+      ...threadComment,
+      _id: threadComment._id || monk.id()
+    }
+    return comments.update({ id: update.id }, update, { upsert: true })
   }
-  return comments.update({ id: update.id }, update, { upsert: true })
-}else {
-  let update = {
-    ...threadComment,
-    _id: threadComment._id || monk.id()
-  }
-  return comments.update({ id: update.id }, update, { upsert: true })
-}
 }
 
 module.exports = {

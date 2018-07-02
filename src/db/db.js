@@ -19,13 +19,22 @@ const readComments = () => comments.find({})
 const readProject = (id) => projects.findOne({id})
 const updateBlock = (block) => blocks.update({_id: block._id}, block)
 const updateThreadComment = (threadComment) => {
-  const update = {
+if(comments.find({id : threadComment.id})){
+  let update = {
+    ...threadComment
+
+  }
+  return comments.update({ id: update.id }, update, { upsert: true })
+}else {
+  let update = {
     ...threadComment,
     _id: threadComment._id || monk.id()
   }
-
   return comments.update({ id: update.id }, update, { upsert: true })
 }
+
+}
+
 const findUser = (user) => {
   console.log('db', user)
   return users.findOne({email: user.email, password: user.password})

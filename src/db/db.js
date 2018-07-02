@@ -37,11 +37,6 @@ if(comments.find({id : threadComment.id})){
 }
 }
 
-const findUser = (user) => {
-  console.log('db', user)
-  return users.findOne({email: user.email, password: user.password})
-}
-
 module.exports = {
   ...db,
   readBlocks,

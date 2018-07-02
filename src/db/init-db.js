@@ -38,10 +38,10 @@ const initialComments = [
 ]
 
 // Drop collections dans le terminal :  db.dropDatabase();
-/* db.get('users').drop()
+ db.get('users').drop()
   db.get('projects').drop()
   db.get('blocks').drop()
-  db.get('comments').drop() */
+  db.get('comments').drop()
 
 // Re-create collections
 const users = db.create('users')

@@ -83,27 +83,27 @@ app.post('/signup', async (req, res, next) => {
     .catch(next)
 })
 
-app.post('/signin', (req, res, next) => {
+app.post('/signin', async (req, res, next) => {
   console.log('signin : ', req.body)
-  db.findUser(req.body.email)
-    .then(user => {
-      console.log('user', user)
-      if (user === null) {
-        return res.end('user not defined')
-      }
-      const isEqual = bcrypt.compare(req.body.password, user.password)
-      if (isEqual && user.type === 'admin') {
-        const token = jwt.sign({
-          id: user._id,
-          username: user.email
-        }, jwtSecret)
-        res.json({ 'name': user.name, 'token': token })
-        console.log('token', token)
-      } else {
-        res.json('auth failed')
-        return next(Error('Wrong Password or not admin'))
-      }
-    })
+  const user = await db.findUser(req.body.email)
+  console.log('user', user)
+  if (user === null) {
+    return res.json('user not defined')
+  }
+  const isEqual = await (bcrypt.compare(req.body.password, user.password))
+  console.log('isequal', isEqual)
+  if (!isEqual) { return res.json('wrong password') }
+  if (isEqual && user.type === 'admin') {
+    const token = jwt.sign({
+      id: user._id,
+      username: user.email
+    }, jwtSecret)
+    console.log('token', token)
+    return res.json({ 'name': user.name, 'token': token })
+  } else {
+    res.json('auth failed')
+    return next(Error('Wrong Password or not admin'))
+  }
 })
 
 app.get('/adminprojects', (req, res, next) => {

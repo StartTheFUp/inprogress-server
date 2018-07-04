@@ -1,7 +1,10 @@
 const db = require('monk')('localhost/inprogress')
 
 const initialUsers = [
-  require('../mocks/users/3.json')
+  require('../mocks/users/1.json'),
+  require('../mocks/users/2.json'),
+  require('../mocks/users/3.json'),
+  require('../mocks/users/4.json')
 ]
 
 const initialProjects = [

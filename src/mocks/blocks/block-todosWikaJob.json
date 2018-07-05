@@ -1,6 +1,6 @@
 {
   "projectId": "projetId_65565",
-  "title": "Todos WikaJob",
+  "title": "Todos Wild Code School",
   "type": "todos",
   "sections": [
     {
@@ -10,7 +10,7 @@
         {
           "id":"elt12",
           "type": "todos",
-          "content": "Finir le petit guide RH1-elt12-, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Finir le petit guide pour le modèle de données, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
@@ -21,7 +21,7 @@
         {
           "id":"elt13",
           "type": "todos",
-          "content": "Finir le petit guide RH1-elt13-, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Finir le backlog avec de vraies users stories",
           "properties": { "checked": true, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",
@@ -33,12 +33,12 @@
     },
     {
       "id":"sectionTodo6",
-      "title": "Flow Match",
+      "title": "Développement",
       "elements": [
         {
           "id":"elt14",
           "type": "todos",
-          "content": "Finir le petit guide RH1-elt14-, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "avoir un bouton 'archiver' associé à chaque billet (affiché dans le bloc et dans le thread associé)",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-29T00:00:00.000Z",
@@ -49,7 +49,7 @@
         {
           "id":"elt15",
           "type": "todos",
-          "content": "Finir le petit guide RH1-elt15-, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Affichage de toutes les todos par ordre anti-chrolonologique avec les nombre de réponses associés",
           "properties": { "checked": true, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-28T00:00:00.000Z",

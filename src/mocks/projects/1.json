@@ -1,12 +1,15 @@
 {
-  "name": "wikajob",
+  "name": "In Progress",
   "id": "projetId_65565",
   "client": [
     {"name":"Bogdan Ceu", "id":"1"},
     {"name":"Frederic Olive"},
-    {"name":"Quentin Roiseux"}
+    {"name":"Quentin Roiseux"},
+    {"name":"Sophie Michaudel"},
+    {"name":"Mikael Verdu"},
+    {"name":"Gaëlle Fougère"}
   ],
   "createdAt": "2018-05-24",
-  "websiteURL": "www.wikajob.fr",
-  "pictureURL":"http://placekitten.com/90/90"
+  "websiteURL": "https://wildcodeschool.fr/",
+  "pictureURL":"https://wildcodeschool.fr/wp-content/uploads/2017/01/logo_orange_pastille.png"
 }

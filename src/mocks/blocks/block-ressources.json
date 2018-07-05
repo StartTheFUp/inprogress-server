@@ -10,7 +10,7 @@
         {
           "id":"elt5",
           "type": "ressources",
-          "content": "Acces Wikajob",
+          "content": "Prototype fait avec notion des outils intéressants : https://www.notion.so/mcoenca/Wikajob-1728a7e0c4af4107aaa4e162142c53bc",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
@@ -21,7 +21,7 @@
         {
           "id":"elt6",
           "type": "ressources",
-          "content": "Comment changer l'image de partage sur strikingly ?",
+          "content": "Pour toute question, demandez à google : www.google.fr",
           "properties": { "checked": false, "archive": true },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-24T00:00:00.000Z",
@@ -32,7 +32,7 @@
         {
           "id":"elt7",
           "type": "ressources",
-          "content": "Finir le petit guide RH1, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Pour l'éditeur de texte, regardez DraftJS :  https://www.draft-js-plugins.com/plugin/image",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",

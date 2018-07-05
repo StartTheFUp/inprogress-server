@@ -1,11 +1,11 @@
 {
-  "projectId": "projetId_65565",
+  "projectId": "2",
   "title": "Billets en cours",
   "type": "billets",
   "sections": [
     {
       "id":"sectionBillet1",
-      "title": "",
+      "title": "billet en cours wikajob2",
       "elements": [
         {
           "id":"elt1",
@@ -21,7 +21,7 @@
         {
           "id":"elt2",
           "type": "billets",
-          "content": "Finir le petit guide RH2 -elt2- , le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "Finir le petit guide RH2-elt2, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",

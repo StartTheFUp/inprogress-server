@@ -1,7 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const db = require('./db/db.js')
-
+const bcrypt = require('bcrypt-promise')
+const jwt = require('jsonwebtoken')
+const jwtSecret = 'MY_FUCKING_SECRET'
 const port = process.env.PORT || 5000
 
 const app = express()
@@ -30,6 +32,13 @@ app.get('/', (req, res) => {
 
 app.get('/blocks', (req, res, next) => {
   db.readBlocks()
+    .then(blocks => res.json(blocks))
+    .catch(next)
+})
+
+app.get('/blocks/:id', (req, res, next) => {
+  const projectId = req.params.id
+  db.readBlocksById(projectId)
     .then(blocks => res.json(blocks))
     .catch(next)
 })
@@ -65,25 +74,50 @@ app.post('/comments', (req, res, next) => {
     .catch(next)
 })
 
-app.post('/signin', (req, res, next) => {
-  db.findUser(req.body)
-    .then(user => {
-      console.log('user', user)
-      if (user === null) {
-        return res.end('user not defined')
-      } else if (user.type === 'admin') {
-        console.log('admin identifié')
-        db.findProjectAdmin()
-          .then(projects => res.end(JSON.stringify(projects)))
-          .catch(next)
-      } else if (user.type === 'client') {
-        console.log('clients identifié')
-        db.findProjectClient(user.email)
-          .then(project => res.end(JSON.stringify(project)))
-          .catch(next)
-      } else return res.end('no project found')
-    })
-    .catch(err => console.log('err', err))
+app.post('/signup', async (req, res, next) => {
+  const newUser = req.body
+  console.log('signup : ', req.body)
+  newUser.password = await bcrypt.hash(newUser.password, 16)
+  db.saveUser(newUser)
+    .then(doc => res.json('ok'))
+    .catch(next)
+})
+
+app.post('/signin', async (req, res, next) => {
+  console.log('signin : ', req.body)
+  const user = await db.findUser(req.body.email)
+  console.log('user', user)
+  if (user === null) {
+    return res.json('user not defined')
+  }
+  const isEqual = await (bcrypt.compare(req.body.password, user.password))
+  console.log('isequal', isEqual)
+  if (!isEqual) { return res.json('wrong password') }
+  if (isEqual && user.type === 'admin') {
+    const token = jwt.sign({
+      id: user._id,
+      username: user.email
+    }, jwtSecret)
+    console.log('token', token)
+    return res.json({ 'name': user.name, 'token': token })
+  } else {
+    res.json('auth failed')
+    return next(Error('Wrong Password or not admin'))
+  }
+})
+
+app.get('/adminprojects', (req, res, next) => {
+  const token = req.headers.authorization.split(' ')[1]
+  jwt.verify(token, jwtSecret, (err, decoded) => {
+    console.log('decoded', decoded)
+    if (err) {
+      console.log(err)
+      res.end('not logged')
+    }
+    db.findProjectAdmin()
+      .then(projects => res.json(projects))
+      .catch(next)
+  })
 })
 
 // Errors handling

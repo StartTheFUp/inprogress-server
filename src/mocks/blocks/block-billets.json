@@ -5,12 +5,12 @@
   "sections": [
     {
       "id":"sectionBillet1",
-      "title": "",
+      "title": "Les premières étapes",
       "elements": [
         {
           "id":"elt1",
           "type": "billets",
-          "content": "Dans mail 1, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
+          "content": "Il faudrait qu'on se fasse un brainstorming pour le POF",
           "properties": { "checked": false, "archive": true},
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-23T00:00:00.000Z",
@@ -21,7 +21,7 @@
         {
           "id":"elt2",
           "type": "billets",
-          "content": "Finir le petit guide RH2 -elt2- , le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "On fait différentes présentations en amont et en live : par exemple benchmark de leur compétition, débrief de leur stratégie ou technologies intéressantes. ",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-26T00:00:00.000Z",
@@ -32,7 +32,7 @@
         {
           "id":"elt3",
           "type": "billets",
-          "content": "Dans mail 1-elt3-, on indique que si questions, les gens peuvent nous en faire part.Est-ce que les users peuvent répondre au mail 1 et ca arrive bien sur contact@wikajob.com ",
+          "content": "Les outils qu’on utilise aujourd’hui pour le suivi des projets de nos clients ne présentent pas une vue d’ensemble en 1 coup d’oeil, ne permettent pas de suivre les échanges de facon coherente, et d’etre sur de n’avoir rien oublié.",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-27T00:00:00.000Z",
@@ -43,7 +43,7 @@
         {
           "id":"elt4",
           "type": "billets",
-          "content": "Finir le petit guide RH2-elt4, le mettre sur le drive et rajouter le lien de partage dans le mail de l'automation mailjet Guide prospect",
+          "content": "J'ai vu un logo sympa ici : https://fr.freelogodesign.org/",
           "properties": { "checked": false, "archive": false },
           "createdBy": "userId_1zezghozzge",
           "createdAt": "2018-05-28T00:00:00.000Z",

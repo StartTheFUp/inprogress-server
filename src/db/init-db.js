@@ -1,4 +1,6 @@
-const db = require('monk')('localhost/inprogress')
+const monk = require('monk')
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/inprogress'
+const db = monk(url)
 
 const initialUsers = [
   require('../mocks/users/1.json'),
@@ -72,3 +74,5 @@ for (const comment of initialComments) {
 // pensez à créer des index si recherche fréquente ou ajouter quelques contraintes
 /* const users = db.get('users')
 users.createIndex('email') */
+
+// db.close()

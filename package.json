@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "start:dev": "nodemon src",
+    "deploy": "git push heroku master",
     "test": "echo 'no test specified'",
     "lint": "standard | snazzy",
     "lint:fix": "standard --fix"

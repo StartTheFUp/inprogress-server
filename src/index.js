@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const db = require('./db/db.js')
 const bcrypt = require('bcrypt-promise')
 const jwt = require('jsonwebtoken')
-const jwtSecret = 'MY_FUCKING_SECRET'
+const jwtSecret = process.env.JWT_SECRET || console.log('JWT_SECRET env var not provided') || 'JWT_SECRET'
 const port = process.env.PORT || 5000
 
 const app = express()

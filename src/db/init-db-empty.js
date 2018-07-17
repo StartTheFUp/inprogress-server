@@ -27,7 +27,7 @@ db.get('comments').drop()
 const users = db.create('users')
 const projects = db.create('projects')
 const blocks = db.create('blocks')
-const comments = db.create('comments')
+db.create('comments')
 
 // Insert users
 for (const user of initialUsers) {
